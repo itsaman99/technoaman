@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+   <body> 
+
+<div class="container">
+    <div id='store'>
+        <div class='headContainer'>
+            <h1 class='topHead col-xs-9'>Record Management System</h1>
+            <ul class="nav nav-pills col-xs-3">
+                <li class="active">
+                    <a href="#home" data-toggle="tab"><i class="fa fa-home fa-3x" ></i></a>
+                    <span class="tooltiptext">Home</span>
+                </li>
+                <li><a href="#search" data-toggle="tab"><i class="fa fa-search fa-3x" ></i></a>
+                    <span class="tooltiptext">Search Record</span>
+                </li>
+                <li>
+                    <a href="#create" data-toggle="tab"><i class="fa fa-plus fa-3x" ></i>
+                   </a>
+                    <span class="tooltiptext">Create Record</span>
+                </li>
+            </ul>
+        </div>
+        <div class='tab-content'>
+            <div class="tab-pane active fade in" id="home">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta incidunt obcaecati molestiae quidem dignissimos assumenda ad commodi. Minus, nostrum, sint.</h3>
+                <div id="RecordCarousel" class="carousel slide" data-ride="car500ousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="img-responsive img-rounded" src="https://static.pexels.com/photos/106344/pexels-photo-106344.jpeg" alt="Chania" height="300">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive img-rounded" src="https://static.pexels.com/photos/135526/pexels-photo-135526.jpeg" alt="Chania" height="300">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive img-rounded" src="https://static.pexels.com/photos/45111/pexels-photo-45111.jpeg" alt="Flower" height="300">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#RecordCarousel" role="button" data-slide="prev">
+                        <span class="fa fa-chevron-circle-left fa-3x"> </span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#RecordCarousel" role="button" data-slide="next">
+                        <span class="fa fa-chevron-circle-right fa-3x"></span> 
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="search">
+                <div id='searchForm'>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="searchCriteria">Search for :</label>
+                            <select class="form-control" id="searchCriteria">
+                                <option>Customer ID</option>
+                                <option>Date</option>
+                                <option>Customer ID Advanced</option>
+                                <option>Inactive Records</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="entryParameter">
+                        </div>
+                        <div class="form-group">
+                            <label for="searchCriteria">Record Type :</label>
+                            <input type="text" class="form-control" id="recType">
+                        </div>
+                    </form>
+                </div>
+                <div class="recordTable"></div>
+            </div>
+            <div class="tab-pane fade" id="create">
+                <form id="createForm" class="form-horizontal center">
+                    <div class="form-group">
+                        <label class="control-label col-xs-4" for="recID">Record ID:</label>
+                        <div class="col-xs-8">
+                            <input type="number" class="form-control" id="recID" placeholder="Enter record ID...">
+                            <span class='inputIcon'><i class="fa fa-th-list fa-2x" ></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-4" for="recordType">Record Type:</label>
+                        <div class="col-xs-8">
+                            <input type="number" class="form-control" id="recordType" placeholder="Enter record type...">
+                            <span class='inputIcon'><i class="fa fa-clipboard fa-2x" ></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-4" for="recDesc">Record Description:</label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" id="recDesc" placeholder="Enter record description...">
+                            <span class='inputIcon'><i class="fa fa-pencil-square-o fa-2x" ></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-offset-4 col-xs-8">
+                            <div class="checkbox">
+                                <label class="radio-inline">
+                                    <input type="radio" name="proofType">Address Proof</label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="proofType">Id Proof</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-4" for="uploadProof">Upload Proof:</label>
+                        <div class="col-xs-8">
+                            <input type="file" class="form-control" id="uploadProof" accept='image/*'>
+                            <span class='inputIcon'><i class="fa fa-upload fa-2x" ></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-offset-4">
+                            <button class="btn btn-success btn-lg">Create Record</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<style>
+    #store {
+    font: 15px Montserrat, sans-serif;
+    height: 780px;
+    width: 100%;
+    background: #d2f9ea;
+    margin-top: 50px;
+}
+
+#store .topHead {
+    font-weight: bold;
+    text-align: center;
+}
+
+#store .nav a {
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+#store .headContainer {
+    padding-top: 15px;
+}
+
+#store li .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+#store li:hover .tooltiptext {
+    visibility: visible;
+}
+
+#store .nav>li>a:focus,
+#store .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #94f18b;
+}
+
+#store li:hover {
+    transform: scale(1.2);
+    transition: transform 250ms ease;
+}
+
+#store .tab-content>div {
+    margin-top: 70px;
+    width: 100%;
+    height: 675px;
+    padding: 20px;
+}
+
+#home h3 {
+    text-align: center;
+}
+
+#RecordCarousel .fa {
+    margin-top: 200%;
+}
+
+#RecordCarousel {
+    margin-left: 12.5%;
+    width: 75%;
+    margin-top: 20px;
+}
+
+#RecordCarousel:after {
+    content: '';
+    margin-left: 7.5%;
+    width: 85%;
+    margin-top: 40px;
+    background-color: black;
+}
+
+#searchForm {
+    margin-top: 35px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#createForm {
+    padding-top: 50px;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+#createForm .radio-inline{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#createForm .form-group {
+    margin-bottom: 35px;
+}
+
+#createForm .inputIcon {
+    width: 40px;
+    background: #66d2fb;
+    top: 1px;
+    position: absolute;
+    right: 16px;
+    font-size: 14px;
+    border-radius: 0px 2px 2px 0px;
+    height: 32px;
+}
+
+#createForm .inputIcon i{
+    top: 1px;
+    position: absolute;
+    right: 6px;
+}
+
+#createForm input[type=file] {
+    cursor: pointer;
+}
+
+#createForm .btn {
+    margin-top: 50px;
+}
+</style>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <title>services</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body >
+    <div class="container">
+        <a href="index.html">HOME</a>
+        <h1 class="section-heading">Our Services</h1>
+        <div class="services-cards">
+           <div class="services-card">
+                <i class="fas fa-code"></i>
+                <a href="projects.html"> <h2>Website development</h2></a> 
+                <p>Modern enterprises need secure nextgeneration infrastructure. lay a solid foundation for a technology with cloud....</p>
+
+            </div>
+            <div class="services-cards">
+                <div class="services-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>Mobile app development</h2>
+                    <p>We develope software solution for screen sizes including web,mobile,tablets and windows.</p>
+    
+                </div>
+                <div class="services-cards">
+                    <div class="services-card">
+                        <i class="fas fa-cubes"></i>
+                        <h2>Cyber Security Services</h2>
+                        <p>Protect your sensitive data with state of the art protection services.</p>
+        
+                    </div>
+        </div>
+        
+    </div>
+
+    
+</body>
+
+<style>
+
+
+    body{
+        background-image: url(snow.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    *{
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+       
+
+    }
+
+    
+
+    .container{
+        width:90%;
+        margin:auto;
+        
+        
+    }
+    .section-heading{
+        font-size: 40px;
+        text-align:centre;
+        margin-top:50px;
+        margin-left: 640px;
+    }
+    .services-cards{
+        display:flex;
+        justify-content:center;
+        margin-top: 60px;
+      
+       
+
+       
+       
+    }
+    .services-card{
+        width: 300px;
+        height: 300px;
+        border: 1px solid #73a7f4;
+        padding: 20px;
+        margin:20px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    .services-card:hover{
+        transform: translateY(-20PX);
+
+    }
+    .services-card i{
+        font-size: 38px;
+        margin-bottom: 20px;
+        color:#3498db;
+
+    }
+    .services-card h2{
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: black;
+        text-decoration:underline;
+
+
+    }
+    .services-card p{
+        font-size: 15px;
+        color:#666;
+        line-height: 1.5;
+        
+    }
+    @media screen and (max-width:768px){
+        .services-cards{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+        
+    
+
+   
+</style>
+</html>
