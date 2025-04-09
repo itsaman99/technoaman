@@ -1,213 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TECHBDA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TECHBDA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .main {
+      background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url('snow.jpg') center/cover no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 35px;
+      color: #ff7200;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+    }
+
+    .menu ul li {
+      margin: 10px 20px;
+    }
+
+    .menu ul li a {
+      color: #ff7200;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .search {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .Srch {
+      padding: 10px;
+      border: 1px solid #ff7200;
+      border-right: none;
+      background: transparent;
+      color: white;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    .btn {
+      padding: 10px;
+      background-color: #ff7200;
+      border: none;
+      color: white;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container2 {
+      text-align: center;
+      margin: auto;
+      padding: 40px 20px;
+      max-width: 600px;
+    }
+
+    .container2 h2 {
+      color: #ff7200;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .container2 p {
+      color: rgba(38, 185, 235, 0.721);
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .choose {
+      padding: 10px;
+      width: 80%;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    .xyz, .s {
+      background-color: #ff7200;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      .menu ul li {
+        margin: 10px 0;
+      }
+
+      .search {
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      .Srch {
+        width: 60%;
+      }
+
+      .btn {
+        width: auto;
+      }
+
+      .container2 h2 {
+        font-size: 24px;
+      }
+
+      .container2 p {
+        font-size: 18px;
+      }
+
+      .choose {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class ="icon">
-                <h2 class="logo">TECHBDA</h2>
-           </div>
-        <div class="menu">
-            <ul>
-                <li> <a href="index.html"> HOME</a></li>  
-                <li> <a href="services.html" > SERVICES </a></li>
-                <li> <a href="projects.html" > PROJECTS </a></li>
-                <li> <a href="contact.html" > CONTACT</a></li>
-                <li> <a href="empln.html" > EMPLOYEE LOGIN </a></li> 
-                
-            </ul>
-        </div>
+  <div class="main">
+    <div class="navbar">
+      <div class="icon">
+        <h2 class="logo">TECHBDA</h2>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="techsoft.html">HOME</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="empln.html">EMPLOYEE LOGIN</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <input class="Srch" placeholder="Type to text" />
+        <button class="btn">Search</button>
+      </div>
+    </div>
 
-        <div class="search">
-            <input class="Srch" name="" placeholder="Type to text">
-            <a href ="#"> <button class="btn">Search</button></a>
-        </div>
-         
-        <div class="container2">
-            <h2>Turn Your Passion into a Thriving Business</h2>
-            <p>It starts with a Beautiful website</p>
-            <a href ="https://www.godaddy.com/en-in/offers/godaddy?isc=sem1year&countryview=1&currencyType=INR&cdtl=c_698011279.g_1247946335083397.k_kwd-77997003132701:loc-90.a_.d_c.ctv_o&bnb=b&msclkid=5c3e02da8f5a19b6f09e64e1486d683c&utm_source=bing&utm_medium=cpc&utm_campaign=en-in_corp-core_sem_bh_b_x_aware-consider_x_pros_intl_exact-stag_001&utm_term=godaddy&utm_content=%5Bgd%5D"> <input class="choose" name="" placeholder="choose your website name"></a>
-            <a href ="https://www.godaddy.com/en-in/offers/godaddy?isc=sem1year&countryview=1&currencyType=INR&cdtl=c_698011279.g_1247946335083397.k_kwd-77997003132701:loc-90.a_.d_c.ctv_o&bnb=b&msclkid=5c3e02da8f5a19b6f09e64e1486d683c&utm_source=bing&utm_medium=cpc&utm_campaign=en-in_corp-core_sem_bh_b_x_aware-consider_x_pros_intl_exact-stag_001&utm_term=godaddy&utm_content=%5Bgd%5D"> <button class ="xyz">xyz.com</button></a><BR>
-            <a href="https://www.website.com/sign-up/step-2/?CFID=122409585&CFTOKEN=b1c9a24c7e51bc16-7FA7FA68-155D-02AB-4FC60A8CFA4EDD21&source=SC&country=IN"><button class="s">Build Your Free Website</button></a>
-
-
-        </div>
-        </div>
-
-        </div>
-
-
-        </div>  
-
-
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-            }
-
-            .main{
-                width:100%;
-                background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(snow.jpg);
-               
-                background-position: center;
-                background-size: cover;
-                height: 100vh;
-
-
-            }
-
-            .navbar{
-                width:1200px;
-                height:75px;
-                margin:auto;
-                
-            }
-
-            .icon{
-                width: 200px;
-                float: left;
-                height: 70px;
-                
-
-            }
-
-            .logo{
-                color:#ff7200;
-                font-size: 35px;
-                font-family: Arial;
-                padding: 10PX;
-                float:left;
-                padding-top: 10px;
-                margin-top: 5px;
-                
-                 
-            }
-
-            .menu{
-                width:400px;
-                float:left;
-                height: 70px;
-            }
-
-            ul{
-                float:left;
-                display:flex;
-                justify-content: center;
-                align-items: center;
-            }
-             
-            ul li{
-                list-style: none;
-                margin-left: 62px;
-                margin-top: 27px;
-                font-size: 14px;
-            }
-
-            ul li{
-                text-decoration: none;
-                color: #ff7200;
-                font-family:Arial;
-                font-weight: bold;
-                transition: 0.4 s ease-in-out;
-            }
-
-            ul li a:hover{
-                color:#ff7200;
-            }
-
-            .search{
-                width: 330px;
-                float:left;
-                margin-left: 270PX;
-
-            }
-
-            .Srch{
-                font-family: 'Times New Roman';
-                width:200px;
-                height:20px;
-                background: transparent;
-                border: 1px solid #ff7200;
-                margin-top: 13px;
-                color: #fff;
-                border-right:none;
-                font-size:16px;
-                float:left;
-                padding: 10px;
-                border-bottom-left-radius: 5px;
-                border-top-left-radius:5px ;}
-              .btn{
-                width:100px;
-                height:40px;
-                background: #ff7200;
-                border: 2px solid #ff7200;
-                margin-top: 13px;
-                color:#fff;
-                font-size: 15px;
-                border-bottom-right-radius: 5px;
-                border-top-right-radius: 5px;
-
-              }  
-
-              .btn:focus{
-                outline: none;
-
-              }
-
-              .srch:focus{
-                outline: none;
-
-
-              }
-
-
-              .container2{
-                width:400px;
-                height:600px;
-                padding-top: 300px;
-                
-
-              }
-              
-             
-              h2{
-                color:#ff7200;
-                font-size: 40px;
-                
-              }
-              p{
-                color:rgba(38, 185, 235, 0.721);
-                font-size: 24px;
-                text-align:start;
-                width:400px;
-              }
-            .s{
-                background-color:#ff7200;
-                color: #fff;
-                font-size: 20px;
-                border-radius: 5px;
-                margin: 10px;
-            }
-            .choose,xyz{
-                margin:5px;
-            }
-              
-
-
-              
-              
-
-
-
-
-
-        </style>
-        </body>
-        </html>
-       
-      
+    <div class="container2">
+      <h2>Turn Your Passion into a Thriving Business</h2>
+      <p>It starts with a Beautiful website</p>
+      <a href="https://www.godaddy.com/">
+        <input class="choose" placeholder="choose your website name" />
+      </a>
+      <br/>
+      <a href="https://www.godaddy.com/">
+        <button class="xyz">xyz.com</button>
+      </a>
+      <br/>
+      <a href="https://www.website.com/sign-up/step-2/">
+        <button class="s">Build Your Free Website</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
